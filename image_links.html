@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked Images</title>
+    <style>
+        /* CSS for general layout */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* CSS for sections */
+        section {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        /* CSS for gallery grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-gap: 20px;
+            justify-items: center;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* CSS for technology image */
+        #home img {
+            width: 80%; /* Adjust the width as needed */
+            height: auto;
+            max-width: 500px; /* Max width to ensure responsiveness */
+            display: block;
+            margin: 0 auto; /* Center the image */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        #home img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#menu">Menu</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to My Website</h1>
+        <p>This is the home section. Feel free to explore!</p>
+        <h2>Technology</h2>
+        <a href="technology1.jpg"><img src="technology2.jpeg" alt="Technology"></a>
+        </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <a href="nature.jpg"><img src="nature.jpg" alt="Nature"></a>
+            <a href="nature1.jpg"><img src="nature1.jpg" alt="Nature 1"></a>
+            <a href="nature2.jpeg"><img src="nature2.jpeg" alt="Nature"></a>
+            <a href="nature3.jpeg"><img src="nature3.jpeg" alt="Nature 1"></a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="food.jpg">Chicken</a></li>
+            <li><a href="food1.jpeg">Fish</a></li>
+            <li><a href="food2.jpg">Chapati</a></li>
+            <li><a href="food3.jpg">Beef</a></li>
+        </ul>
+    </section>
+</body>
+</html>
